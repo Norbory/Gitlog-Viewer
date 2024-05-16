@@ -1,30 +1,43 @@
-# React + TypeScript + Vite
+# GitLog Viewer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a simple application that allows you to observe commits from any Git repository.
 
-Currently, two official plugins are available:
+![image](https://github.com/Norbory/Gitlog-Viewer/assets/65518034/c47d1638-fd75-4aa1-adc3-2bf27e3aad36)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How it works
 
-## Expanding the ESLint configuration
+The application utilizes the GitHub API to fetch the list of commits from a specific repository. You can input the repository URL and view the commits in an organized and readable manner.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## Usage Instructions
 
-- Configure the top-level `parserOptions` property like this:
+1. Clone this repository to your local machine:
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```bash
+git clone https://github.com/Norbory/Gitlog-Viewer.git
+```
+2. To run this repository, first install the dependencies needed
+
+```bash
+npm i
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+3. To run this repository write this
+
+```bash
+npm run dev
+```
+
+4. Input the name from your Github profile which you want to view the commits.
+
+5. Input your Github repository name from which you want to view the commits.
+
+6. Enjoy viewing the commits!
+
+## Contribution
+Contributions are welcome! If you have any ideas to improve this application, feel free to submit a pull request. Please make sure to follow the contribution guidelines.
+
+## Issues and Suggestions
+If you encounter any issues or have any suggestions, please create an issue in this repository.
+
+## License
+This project is licensed under the MIT License.
