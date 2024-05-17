@@ -1,3 +1,3 @@
 export const Links = {
-    host: 'http://localhost:5000/',
+    host: 'https://gitlog-nest-api.onrender.com/',
 }

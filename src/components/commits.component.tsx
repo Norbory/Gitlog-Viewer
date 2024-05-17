@@ -29,7 +29,7 @@ export const CommitsComponent = ({commits}:{commits: RepoInfo}) => {
             {
                 commits.commitHistory.map((commit, index) => {
                     return (
-                        <div key={index} className='flex flex-row self-baseline'>
+                        <div key={index} className='flex flex-row self-start'>
                             <img 
                                 src="https://www.svgrepo.com/show/327283/git-commit.svg" 
                                 alt="separador de commits" 
