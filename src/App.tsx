@@ -122,12 +122,12 @@ function App() {
         </>
       }
       {
-        show === false && message === "User's Repositories has been retrieved"
+        show === false && message === "User's Repositories has been retrieved" && username.name === "Norbory"
         ? <RepositoriesComponent repositories={repositories} getCommits={(repo: string) => {getCommits(repo)}}/>
         : null
       }
       {
-        show === true && commitMessage === "Repository Information has been received"
+        show === true && commitMessage === "Repository Information has been received" && username.name === "Norbory"
         ? CommitsComponent({commits})
         : null
       }
